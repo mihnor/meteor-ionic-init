@@ -1,0 +1,12 @@
+template(name="appLayout")
+    +ionBody
+      +ionNavView
+      +yield
+      +appTabs
+
+template(name="appTabs")
+    +ionTabs(style="iphone" class="tabs-icon-top")
+        +ionTab(title="Meu bebê" path="meubebe" iconOff="ios-paper-outline" iconOn="ios-paper" class="tab-item-positive")
+        +ionTab(title="Brincadeiras" path="brincadeiras" iconOff="grid" iconOn="grid" class="tab-item-positive")
+        +ionTab(title="Ajustes" path="ajustes" iconOff="grid" iconOn="grid" class="tab-item-positive")
+        +ionTab(title="Sobre" path="sobre" iconOff="ios-information-outline" iconOn="ios-information" class="tab-item-positive")
